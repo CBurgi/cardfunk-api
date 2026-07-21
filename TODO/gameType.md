@@ -11,7 +11,7 @@
 **Body**
 ```
 {
-  game_type_name: string,
+  game_type_name: string | null,
 }
 ```
 
@@ -58,7 +58,7 @@
 # PUT updateGameType
 
 ## URI
-/{game_type_id}/createGameType
+/{game_type_id}/updateGameType
 
 ## Request
 **Headers**
