@@ -106,7 +106,7 @@
 # PUT addBoard
 
 ## URI
-gameTypes/{game_type_id}/addBoard
+/gameTypes/{game_type_id}/addBoard
 
 ## Request
 **Headers**
@@ -140,7 +140,7 @@ gameTypes/{game_type_id}/addBoard
 # PUT addBoards
 
 ## URI
-gameTypes/{game_type_id}/addBoards
+/gameTypes/{game_type_id}/addBoards
 
 ## Request
 **Headers**
@@ -174,7 +174,7 @@ gameTypes/{game_type_id}/addBoards
 # PUT removeBoard
 
 ## URI
-gameTypes/{game_type_id}/removeBoard
+/gameTypes/{game_type_id}/removeBoard
 
 ## Request
 **Headers**
@@ -208,7 +208,7 @@ gameTypes/{game_type_id}/removeBoard
 # PUT removeBoards
 
 ## URI
-gameTypes/{game_type_id}/removeBoards
+/gameTypes/{game_type_id}/removeBoards
 
 ## Request
 **Headers**
@@ -242,8 +242,8 @@ gameTypes/{game_type_id}/removeBoards
 # DELETE deleteGameType
 
 ## URI
-gameTypes/{game_type_id}/delete
-gameTypes/{game_type_id}
+/gameTypes/{game_type_id}/delete
+/gameTypes/{game_type_id}
 
 ## Response
 204 No Content
