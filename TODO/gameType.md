@@ -1,7 +1,7 @@
 # POST createGameType
 
 ## URI
-/createGameType
+/gamesTypes/create
 
 ## Request
 **Headers**
@@ -40,7 +40,8 @@
 # GET getGameType
 
 ## URI
-/{game_type_id}/getGameType
+/gameTypes/{game_type_id}/get
+/gameTypes/{game_type_id}
 
 **Headers**
 - Accept: application/json
@@ -66,7 +67,8 @@
 # PUT updateGameType
 
 ## URI
-/{game_type_id}/updateGameType
+/gameTypes/{game_type_id}/update
+/gameTypes/{game_type_id}
 
 ## Request
 **Headers**
@@ -104,7 +106,7 @@
 # PUT addBoard
 
 ## URI
-/{game_type_id}/addBoard
+gameTypes/{game_type_id}/addBoard
 
 ## Request
 **Headers**
@@ -138,7 +140,7 @@
 # PUT addBoards
 
 ## URI
-/{game_type_id}/addBoards
+gameTypes/{game_type_id}/addBoards
 
 ## Request
 **Headers**
@@ -172,7 +174,7 @@
 # PUT removeBoard
 
 ## URI
-/{game_type_id}/removeBoard
+gameTypes/{game_type_id}/removeBoard
 
 ## Request
 **Headers**
@@ -206,7 +208,7 @@
 # PUT removeBoards
 
 ## URI
-/{game_type_id}/removeBoards
+gameTypes/{game_type_id}/removeBoards
 
 ## Request
 **Headers**
@@ -240,7 +242,8 @@
 # DELETE deleteGameType
 
 ## URI
-/{game_type_id}/deleteGameType
+gameTypes/{game_type_id}/delete
+gameTypes/{game_type_id}
 
 ## Response
 204 No Content
