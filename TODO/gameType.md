@@ -26,6 +26,10 @@
 {
   game_type_name: string,
   game_type_id: string,
+  game_type_data:
+  {
+    board_type_ids: string
+  }
 }
 ```
 
