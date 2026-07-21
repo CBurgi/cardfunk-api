@@ -11,9 +11,9 @@
 **Body**
 ```
 {
-  game_type_name: string | null,
-  ids: [string] | null,
-  game_type_data: {} | null
+  name: string | null,
+  board_type_ids: [string] | null,
+  data: {} | null
 }
 ```
 
@@ -26,10 +26,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
-  ids: [string],
-  game_type_data: {}
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
 }
 ```
 
@@ -51,10 +51,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
-  ids: [string],
-  game_type_data: {}
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
 }
 ```
 
@@ -72,9 +72,9 @@
 **Body**
 ```
 {
-  game_type_name: string | null,
-  ids: [string] | null,
-  game_type_data: {} | null
+  name: string | null,
+  board_type_ids: [string] | null,
+  data: {} | null
 }
 ```
 
@@ -87,10 +87,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
-  ids: [string],
-  game_type_data: {}
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
 }
 ```
 
@@ -120,10 +120,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
-  ids: [string],
-  game_type_data: {}
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
 }
 ```
 
@@ -140,7 +140,7 @@
 **Body**
 ```
 {
-  ids: [string]
+  board_type_ids: [string]
 }
 ```
 
@@ -153,10 +153,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
-  ids: [string],
-  game_type_data: {}
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
 }
 ```
 
@@ -186,10 +186,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
-  ids: [string],
-  game_type_data: {}
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
 }
 ```
 
@@ -206,7 +206,7 @@
 **Body**
 ```
 {
-  ids: [string]
+  board_type_ids: [string]
 }
 ```
 
@@ -219,10 +219,308 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
-  ids: [string],
-  game_type_data: {}
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
+}
+```
+
+# PUT addItem
+
+- If not empty, will replace value
+- If array, will append
+- If type is not specified, will assume
+
+## URI
+/gameTypes/{game_type_id}/addItem
+/gameTypes/{game_type_id}/add
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+{
+  name: string,
+  type: string | null,
+  value: any | null
+}
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
+}
+```
+
+# PUT addItems
+
+- If not empty, will replace value
+- If array, will append
+- If type is not specified, will assume
+
+## URI
+/gameTypes/{game_type_id}/addItems
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+[
+  {
+    name: string,
+    type: string | null,
+    value: any | null
+  },
+  ...
+]
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
+}
+```
+
+# PUT removeItem
+
+## URI
+/gameTypes/{game_type_id}/removeItem
+/gameTypes/{game_type_id}/remove
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+{
+  name: string
+}
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
+}
+```
+
+# PUT removeItems
+
+## URI
+/gameTypes/{game_type_id}/removeItems
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+[
+  {
+    name: string
+  },
+  ...
+]
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
+}
+```
+
+# PUT setValue
+
+- Will return error if not correct type
+
+## URI
+/gameTypes/{game_type_id}/setValue
+/gameTypes/{game_type_id}/set
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+{
+  name: string,
+  value: any
+}
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
+}
+```
+
+# PUT setValues
+
+- Will only set values that are the correct types
+
+## URI
+/gameTypes/{game_type_id}/setValues
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+[
+  {
+    name: string,
+    value: any
+  },
+  ...
+]
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
+}
+```
+
+# PUT clearValue
+
+## URI
+/gameTypes/{game_type_id}/clearValue
+/gameTypes/{game_type_id}/clear
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+{
+  name: string
+}
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
+}
+```
+
+# PUT clearValues
+
+## URI
+/gameTypes/{game_type_id}/clearValues
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+[
+  {
+    name: string
+  },
+  ...
+]
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  id: string,
+  name: string,
+  board_type_ids: [string],
+  data: {}
 }
 ```
 
