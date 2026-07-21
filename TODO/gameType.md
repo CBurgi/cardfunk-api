@@ -11,9 +11,9 @@
 **Body**
 ```
 {
- name: string | null,
-  board_type_ids: [string] | null,
- data: {} | null
+  game_type_name: string | null,
+  ids: [string] | null,
+  game_type_data: {} | null
 }
 ```
 
@@ -26,10 +26,10 @@
 **Body**
 ```
 {
- id: string,
- name: string,
-  board_type_ids: [string],
- data: {}
+  game_type_id: string,
+  game_type_name: string,
+  ids: [string],
+  game_type_data: {}
 }
 ```
 
@@ -51,10 +51,10 @@
 **Body**
 ```
 {
- id: string,
- name: string,
-  board_type_ids: [string],
- data: {}
+  game_type_id: string,
+  game_type_name: string,
+  ids: [string],
+  game_type_data: {}
 }
 ```
 
@@ -72,9 +72,9 @@
 **Body**
 ```
 {
- name: string | null,
-  board_type_ids: [string] | null,
- data: {} | null
+  game_type_name: string | null,
+  ids: [string] | null,
+  game_type_data: {} | null
 }
 ```
 
@@ -87,10 +87,10 @@
 **Body**
 ```
 {
- id: string,
- name: string,
-  board_type_ids: [string],
- data: {}
+  game_type_id: string,
+  game_type_name: string,
+  ids: [string],
+  game_type_data: {}
 }
 ```
 
@@ -107,7 +107,7 @@
 **Body**
 ```
 {
-  board_type_id: string
+  id: string
 }
 ```
 
@@ -120,10 +120,10 @@
 **Body**
 ```
 {
- id: string,
- name: string,
-  board_type_ids: [string],
- data: {}
+  game_type_id: string,
+  game_type_name: string,
+  ids: [string],
+  game_type_data: {}
 }
 ```
 
@@ -140,7 +140,7 @@
 **Body**
 ```
 {
-  board_type_ids: [string]
+  ids: [string]
 }
 ```
 
@@ -153,10 +153,10 @@
 **Body**
 ```
 {
- id: string,
- name: string,
-  board_type_ids: [string],
- data: {}
+  game_type_id: string,
+  game_type_name: string,
+  ids: [string],
+  game_type_data: {}
 }
 ```
 
@@ -173,7 +173,7 @@
 **Body**
 ```
 {
-  board_type_id: string
+  id: string
 }
 ```
 
@@ -186,10 +186,10 @@
 **Body**
 ```
 {
- id: string,
- name: string,
-  board_type_ids: [string],
- data: {}
+  game_type_id: string,
+  game_type_name: string,
+  ids: [string],
+  game_type_data: {}
 }
 ```
 
@@ -206,7 +206,7 @@
 **Body**
 ```
 {
-  board_type_ids: [string]
+  ids: [string]
 }
 ```
 
@@ -219,10 +219,10 @@
 **Body**
 ```
 {
- id: string,
- name: string,
-  board_type_ids: [string],
- data: {}
+  game_type_id: string,
+  game_type_name: string,
+  ids: [string],
+  game_type_data: {}
 }
 ```
 

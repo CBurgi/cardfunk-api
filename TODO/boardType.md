@@ -11,12 +11,12 @@
 **Body**
 ```
 {
- name: string | null,
- owner: 'global' | 'player' | null
+  name: string | null,
+  owner: 'global' | 'player' | null
   deck_type_ids: [string] | null,
   space_type_ids: [string] | null,
   hand_type_ids: [string] | null,
- data: {} | null
+  data: {} | null
 }
 ```
 
@@ -29,13 +29,13 @@
 **Body**
 ```
 {
- id: string,
- name: string,
- owner: 'global' | 'player' | null
+  id: string,
+  name: string,
+  owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
- data: {}
+  data: {}
 }
 ```
 
@@ -57,13 +57,13 @@
 **Body**
 ```
 {
- id: string,
- name: string,
- owner: 'global' | 'player' | null
+  id: string,
+  name: string,
+  owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
- data: {}
+  data: {}
 }
 ```
 
@@ -81,12 +81,12 @@
 **Body**
 ```
 {
- name: string | null,
- owner: 'global' | 'player' | null
+  name: string | null,
+  owner: 'global' | 'player' | null
   deck_type_ids: [string] | null,
   space_type_ids: [string] | null,
   hand_type_ids: [string] | null,
- data: {} | null
+  data: {} | null
 }
 ```
 
@@ -99,13 +99,13 @@
 **Body**
 ```
 {
- id: string,
- name: string,
- owner: 'global' | 'player' | null
+  id: string,
+  name: string,
+  owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
- data: {}
+  data: {}
 }
 ```
 
@@ -135,13 +135,13 @@
 **Body**
 ```
 {
- id: string,
- name: string,
- owner: 'global' | 'player' | null
+  id: string,
+  name: string,
+  owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
- data: {}
+  data: {}
 }
 ```
 
@@ -171,13 +171,13 @@
 **Body**
 ```
 {
- id: string,
- name: string,
- owner: 'global' | 'player' | null
+  id: string,
+  name: string,
+  owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
- data: {}
+  data: {}
 }
 ```
 
@@ -207,13 +207,13 @@
 **Body**
 ```
 {
- id: string,
- name: string,
- owner: 'global' | 'player' | null
+  id: string,
+  name: string,
+  owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
- data: {}
+  data: {}
 }
 ```
 
@@ -243,13 +243,13 @@
 **Body**
 ```
 {
- id: string,
- name: string,
- owner: 'global' | 'player' | null
+  id: string,
+  name: string,
+  owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
- data: {}
+  data: {}
 }
 ```
 
