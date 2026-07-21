@@ -161,6 +161,74 @@
 }
 ```
 
+# PUT removeBoard
+
+## URI
+/{game_type_id}/removeBoard
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+{
+  board_type_id: string
+}
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  game_type_name: string,
+  game_type_id: string,
+  game_type_data: {
+    board_type_ids: [string],
+  }
+}
+```
+
+# PUT removeBoards
+
+## URI
+/{game_type_id}/removeBoards
+
+## Request
+**Headers**
+- Content-Type: application/json
+- Accept: application/json
+
+**Body**
+```
+{
+  board_type_ids: [string]
+}
+```
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+{
+  game_type_name: string,
+  game_type_id: string,
+  game_type_data: {
+    board_type_ids: [string],
+  }
+}
+```
+
 # DELETE deleteGameType
 
 ## URI
