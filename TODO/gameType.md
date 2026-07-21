@@ -11,9 +11,9 @@
 **Body**
 ```
 {
-  game_type_name: string | null,
+ name: string | null,
   board_type_ids: [string] | null,
-  game_type_data: {} | null
+ data: {} | null
 }
 ```
 
@@ -26,10 +26,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
+ id: string,
+ name: string,
   board_type_ids: [string],
-  game_type_data: {}
+ data: {}
 }
 ```
 
@@ -51,10 +51,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
+ id: string,
+ name: string,
   board_type_ids: [string],
-  game_type_data: {}
+ data: {}
 }
 ```
 
@@ -72,9 +72,9 @@
 **Body**
 ```
 {
-  game_type_name: string | null,
+ name: string | null,
   board_type_ids: [string] | null,
-  game_type_data: {} | null
+ data: {} | null
 }
 ```
 
@@ -87,10 +87,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
+ id: string,
+ name: string,
   board_type_ids: [string],
-  game_type_data: {}
+ data: {}
 }
 ```
 
@@ -120,10 +120,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
+ id: string,
+ name: string,
   board_type_ids: [string],
-  game_type_data: {}
+ data: {}
 }
 ```
 
@@ -153,10 +153,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
+ id: string,
+ name: string,
   board_type_ids: [string],
-  game_type_data: {}
+ data: {}
 }
 ```
 
@@ -186,10 +186,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
+ id: string,
+ name: string,
   board_type_ids: [string],
-  game_type_data: {}
+ data: {}
 }
 ```
 
@@ -219,10 +219,10 @@
 **Body**
 ```
 {
-  game_type_id: string,
-  game_type_name: string,
+ id: string,
+ name: string,
   board_type_ids: [string],
-  game_type_data: {}
+ data: {}
 }
 ```
 
