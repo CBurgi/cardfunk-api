@@ -116,7 +116,7 @@
 # PUT add{Deck/Space/Hand}
 
 ## URI
-boardTypes/{board_type_id}/add{Deck/Space/Hand}
+/boardTypes/{board_type_id}/add{Deck/Space/Hand}
 
 ## Request
 **Headers**
@@ -152,7 +152,7 @@ boardTypes/{board_type_id}/add{Deck/Space/Hand}
 # PUT add{Decks/Spaces/Hands}
 
 ## URI
-boardTypes/{board_type_id}/add{Decks/Spaces/Hands}
+/boardTypes/{board_type_id}/add{Decks/Spaces/Hands}
 
 ## Request
 **Headers**
@@ -188,7 +188,7 @@ boardTypes/{board_type_id}/add{Decks/Spaces/Hands}
 # PUT remove{Deck/Space/Hand}
 
 ## URI
-boardTypes/{board_type_id}/remove{Deck/Space/Hand}
+/boardTypes/{board_type_id}/remove{Deck/Space/Hand}
 
 ## Request
 **Headers**
@@ -224,7 +224,7 @@ boardTypes/{board_type_id}/remove{Deck/Space/Hand}
 # PUT remove{Decks/Spaces/Hands}
 
 ## URI
-boardTypes/{board_type_id}/remove{Decks/Spaces/Hands}
+/boardTypes/{board_type_id}/remove{Decks/Spaces/Hands}
 
 ## Request
 **Headers**
@@ -260,8 +260,8 @@ boardTypes/{board_type_id}/remove{Decks/Spaces/Hands}
 # DELETE deleteBoardType
 
 ## URI
-boardTypes/{board_type_id}/delete
-boardTypes/{board_type_id}
+/boardTypes/{board_type_id}/delete
+/boardTypes/{board_type_id}
 
 ## Response
 204 No Content
