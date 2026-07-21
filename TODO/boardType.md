@@ -12,6 +12,7 @@
 ```
 {
   board_type_name: string | null,
+  board_owner: 'global' | 'player' | null
   deck_type_ids: [string] | null,
   space_type_ids: [string] | null,
   hand_type_ids: [string] | null,
@@ -30,6 +31,7 @@
 {
   board_type_id: string,
   board_type_name: string,
+  board_owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
@@ -57,6 +59,7 @@
 {
   board_type_id: string,
   board_type_name: string,
+  board_owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
@@ -79,6 +82,7 @@
 ```
 {
   board_type_name: string | null,
+  board_owner: 'global' | 'player' | null
   deck_type_ids: [string] | null,
   space_type_ids: [string] | null,
   hand_type_ids: [string] | null,
@@ -97,6 +101,7 @@
 {
   board_type_id: string,
   board_type_name: string,
+  board_owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
@@ -132,6 +137,7 @@
 {
   board_type_id: string,
   board_type_name: string,
+  board_owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
@@ -167,6 +173,7 @@
 {
   board_type_id: string,
   board_type_name: string,
+  board_owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
@@ -202,6 +209,7 @@
 {
   board_type_id: string,
   board_type_name: string,
+  board_owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
@@ -237,6 +245,7 @@
 {
   board_type_id: string,
   board_type_name: string,
+  board_owner: 'global' | 'player' | null
   deck_type_ids: [string],
   space_type_ids: [string],
   hand_type_ids: [string]
