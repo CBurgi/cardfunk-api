@@ -1,7 +1,7 @@
 # POST createGameType
 
 ## URI
-/gamesTypes/create
+/gameTypes/create
 
 ## Request
 **Headers**
