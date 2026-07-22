@@ -40,6 +40,38 @@
 }
 ```
 
+# GET getBoardTypes
+
+may want to do some pagination for this and/or just return name and id if too long
+
+## URI
+{game_type_id}/boards/get
+{game_type_id}/boards
+
+**Headers**
+- Accept: application/json
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+[
+  {
+    id: string,
+    name: string,
+    owner: 'global' | 'player' | '' | null,
+    deck_type_ids: [string],
+    space_type_ids: [string],
+    hand_type_ids: [string]
+    data: {}
+  }, ...
+]
+```
+
 # GET getBoardType
 
 ## URI

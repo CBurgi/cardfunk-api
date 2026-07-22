@@ -2,6 +2,7 @@
 
 ## URI
 /gameTypes/create
+/gameTypes
 
 ## Request
 **Headers**
@@ -32,6 +33,37 @@
   token_type_ids: [string],
   data: {}
 }
+```
+
+# GET getGameTypes
+
+may want to do some pagination for this and/or just return name and id if too long
+
+## URI
+/gameTypes/get
+/gameTypes
+
+**Headers**
+- Accept: application/json
+
+## Response
+200 OK 
+
+**Headers**
+- Content-Type: application/json
+
+**Body**
+```
+[
+  {
+    id: string,
+    name: string,
+    board_ids: [string],
+    card_type_ids: [string],
+    token_type_ids: [string],
+    data: {}
+  }, ...
+]
 ```
 
 # GET getGameType
