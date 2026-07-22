@@ -1,7 +1,8 @@
 # POST createBoardType
 
 ## URI
-/boardTypes/create
+{game_type_id}/boards/create
+{game_type_id}/boards
 
 ## Request
 **Headers**
@@ -42,8 +43,8 @@
 # GET getBoardType
 
 ## URI
-/boardTypes/{board_type_id}/get
-/boardTypes/{board_type_id}
+{game_type_id}/boards/{board_id}/get
+{game_type_id}/boards/{board_id}
 
 **Headers**
 - Accept: application/json
@@ -70,8 +71,8 @@
 # PUT updateBoardType
 
 ## URI
-/boardTypes/{board_type_id}/update
-/boardTypes/{board_type_id}
+{game_type_id}/boards/{board_id}/update
+{game_type_id}/boards/{board_id}
 
 ## Request
 **Headers**
@@ -112,7 +113,7 @@
 # PUT add{Deck/Space/Hand}
 
 ## URI
-/boardTypes/{board_type_id}/add{Deck/Space/Hand}
+{game_type_id}/boards/{board_id}/add{Deck/Space/Hand}
 
 ## Request
 **Headers**
@@ -148,7 +149,7 @@
 # PUT add{Decks/Spaces/Hands}
 
 ## URI
-/boardTypes/{board_type_id}/add{Decks/Spaces/Hands}
+{game_type_id}/boards/{board_id}/add{Decks/Spaces/Hands}
 
 ## Request
 **Headers**
@@ -184,7 +185,7 @@
 # PUT remove{Deck/Space/Hand}
 
 ## URI
-/boardTypes/{board_type_id}/remove{Deck/Space/Hand}
+{game_type_id}/boards/{board_id}/remove{Deck/Space/Hand}
 
 ## Request
 **Headers**
@@ -220,7 +221,7 @@
 # PUT remove{Decks/Spaces/Hands}
 
 ## URI
-/boardTypes/{board_type_id}/remove{Decks/Spaces/Hands}
+{game_type_id}/boards/{board_id}/remove{Decks/Spaces/Hands}
 
 ## Request
 **Headers**
@@ -256,8 +257,8 @@
 # DELETE deleteBoardType
 
 ## URI
-/boardTypes/{board_type_id}/delete
-/boardTypes/{board_type_id}
+{game_type_id}/boards/{board_id}/delete
+{game_type_id}/boards/{board_id}
 
 ## Response
 204 No Content
