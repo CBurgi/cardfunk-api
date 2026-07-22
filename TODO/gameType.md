@@ -101,10 +101,10 @@
 }
 ```
 
-# PUT addBoard
+# PUT add{Board/CardType/TokenType}
 
 ## URI
-/gameTypes/{game_type_id}/addBoard
+/gameTypes/{game_type_id}/add{Board/CardType/TokenType}
 
 ## Request
 **Headers**
@@ -136,10 +136,10 @@
 }
 ```
 
-# PUT addBoards
+# PUT add{Boards/CardTypes/TokenTypes}
 
 ## URI
-/gameTypes/{game_type_id}/addBoards
+/gameTypes/{game_type_id}/add{Boards/CardTypes/TokenTypes}
 
 ## Request
 **Headers**
@@ -149,7 +149,7 @@
 **Body**
 ```
 {
-  board_ids: [string]
+  {board/card_type/token_type}_ids: [string]
 }
 ```
 
@@ -171,10 +171,10 @@
 }
 ```
 
-# PUT removeBoard
+# PUT remove{Board/CardType/TokenType}
 
 ## URI
-/gameTypes/{game_type_id}/removeBoard
+/gameTypes/{game_type_id}/remove{Board/CardType/TokenType}
 
 ## Request
 **Headers**
@@ -206,10 +206,10 @@
 }
 ```
 
-# PUT removeBoards
+# PUT remove{Boards/CardTypes/TokenTypes}
 
 ## URI
-/gameTypes/{game_type_id}/removeBoards
+/gameTypes/{game_type_id}/remove{Boards/CardTypes/TokenTypes}
 
 ## Request
 **Headers**
@@ -219,7 +219,7 @@
 **Body**
 ```
 {
-  board_ids: [string]
+  {board/card_type/token_type}_ids: [string]
 }
 ```
 
