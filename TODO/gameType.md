@@ -12,7 +12,6 @@
 ```
 {
   name: string | null,
-  board_type_ids: [string] | null,
   data: {} | null
 }
 ```
@@ -28,7 +27,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -53,7 +54,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -73,7 +76,9 @@
 ```
 {
   name: string | null,
-  board_type_ids: [string] | null,
+  board_ids: [string] | null,
+  card_type_ids [string] | null,
+  token_type_ids [string] | null,
   data: {} | null
 }
 ```
@@ -89,7 +94,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -122,7 +129,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -140,7 +149,7 @@
 **Body**
 ```
 {
-  board_type_ids: [string]
+  board_ids: [string]
 }
 ```
 
@@ -155,7 +164,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -188,7 +199,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -206,7 +219,7 @@
 **Body**
 ```
 {
-  board_type_ids: [string]
+  board_ids: [string]
 }
 ```
 
@@ -221,7 +234,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -261,7 +276,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -303,7 +320,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -337,7 +356,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -373,7 +394,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -410,7 +433,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -449,7 +474,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -483,7 +510,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
@@ -519,7 +548,9 @@
 {
   id: string,
   name: string,
-  board_type_ids: [string],
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
   data: {}
 }
 ```
