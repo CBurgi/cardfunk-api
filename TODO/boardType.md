@@ -14,9 +14,9 @@
 {
   name: string | null,
   owner: 'global' | 'player' | '' | null,
-  deck_type_ids: [string] | null,
-  space_type_ids: [string] | null,
-  hand_type_ids: [string] | null,
+  deck_ids: [string] | null,
+  space_ids: [string] | null,
+  hand_ids: [string] | null,
   data: {} | null
 }
 ```
@@ -33,9 +33,9 @@
   id: string,
   name: string,
   owner: 'global' | 'player' | '' | null,
-  deck_type_ids: [string],
-  space_type_ids: [string],
-  hand_type_ids: [string]
+  deck_ids: [string],
+  space_ids: [string],
+  hand_ids: [string]
   data: {}
 }
 ```
@@ -64,9 +64,9 @@ may want to do some pagination for this and/or just return name and id if too lo
     id: string,
     name: string,
     owner: 'global' | 'player' | '' | null,
-    deck_type_ids: [string],
-    space_type_ids: [string],
-    hand_type_ids: [string]
+    deck_ids: [string],
+    space_ids: [string],
+    hand_ids: [string]
     data: {}
   }, ...
 ]
@@ -93,9 +93,9 @@ may want to do some pagination for this and/or just return name and id if too lo
   id: string,
   name: string,
   owner: 'global' | 'player' | '' | null,
-  deck_type_ids: [string],
-  space_type_ids: [string],
-  hand_type_ids: [string]
+  deck_ids: [string],
+  space_ids: [string],
+  hand_ids: [string]
   data: {}
 }
 ```
@@ -116,9 +116,9 @@ may want to do some pagination for this and/or just return name and id if too lo
 {
   name: string | null,
   owner: 'global' | 'player' | '' | null,
-  deck_type_ids: [string] | null,
-  space_type_ids: [string] | null,
-  hand_type_ids: [string] | null,
+  deck_ids: [string] | null,
+  space_ids: [string] | null,
+  hand_ids: [string] | null,
   data: {} | null
 }
 ```
@@ -135,9 +135,9 @@ may want to do some pagination for this and/or just return name and id if too lo
   id: string,
   name: string,
   owner: 'global' | 'player' | '' | null,
-  deck_type_ids: [string],
-  space_type_ids: [string],
-  hand_type_ids: [string]
+  deck_ids: [string],
+  space_ids: [string],
+  hand_ids: [string]
   data: {}
 }
 ```
@@ -171,9 +171,9 @@ may want to do some pagination for this and/or just return name and id if too lo
   id: string,
   name: string,
   owner: 'global' | 'player' | '' | null,
-  deck_type_ids: [string],
-  space_type_ids: [string],
-  hand_type_ids: [string]
+  deck_ids: [string],
+  space_ids: [string],
+  hand_ids: [string]
   data: {}
 }
 ```
@@ -207,9 +207,9 @@ may want to do some pagination for this and/or just return name and id if too lo
   id: string,
   name: string,
   owner: 'global' | 'player' | '' | null,
-  deck_type_ids: [string],
-  space_type_ids: [string],
-  hand_type_ids: [string]
+  deck_ids: [string],
+  space_ids: [string],
+  hand_ids: [string]
   data: {}
 }
 ```
@@ -243,9 +243,9 @@ may want to do some pagination for this and/or just return name and id if too lo
   id: string,
   name: string,
   owner: 'global' | 'player' | '' | null,
-  deck_type_ids: [string],
-  space_type_ids: [string],
-  hand_type_ids: [string]
+  deck_ids: [string],
+  space_ids: [string],
+  hand_ids: [string]
   data: {}
 }
 ```
@@ -279,9 +279,9 @@ may want to do some pagination for this and/or just return name and id if too lo
   id: string,
   name: string,
   owner: 'global' | 'player' | '' | null
-  deck_type_ids: [string],
-  space_type_ids: [string],
-  hand_type_ids: [string]
+  deck_ids: [string],
+  space_ids: [string],
+  hand_ids: [string]
   data: {}
 }
 ```
