@@ -6,6 +6,10 @@
 500 Internal Server Error
 501 Not Implemented
 
+# General API notes
+
+if the verbose=true header is used, IDs will be pulled and full items will be included in the response 
+
 # Card Holders
 
 ## Decks
