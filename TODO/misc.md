@@ -2,12 +2,17 @@
 
 GameType
 - CardTypes
-- TokenTypes
+- CounterTypes
+- Tables
 - Spaces
   - Piles
-  - Zones
+    - allowed CardTypes
   - Hands
-    - [all] allowed {Card/Token}Types
+    - allowed CardTypes
+  - Zones
+    - Tables
+    - allowed CardTypes
+    - allowed CounterTypes
 
 # Errors
 400 Bad Request
