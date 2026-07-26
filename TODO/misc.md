@@ -10,6 +10,19 @@
 
 if the verbose=true header is used, IDs will be pulled and full items will be included in the response 
 
+## Updating objects
+
+Arrays:
+- if "++" is first item, add other items to array
+- if "--" is first item, remove other items from array
+
+Objectes:
+- if set item to `null`, remove item
+
+# Cards
+
+face 0 is generally back/blank side, face 1 is generally front/main side, face 2 is generally flip side
+
 # Card Holders
 
 ## Decks
