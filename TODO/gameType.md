@@ -10,7 +10,7 @@
   creator: string,
   visibility: "public" | "private",
   num_players: number,
-  board_ids: [string],
+  space_ids: [string],
   card_type_ids: [string],
   token_type_ids: [string],
   data: {}
@@ -35,7 +35,7 @@
   description: string | null,
   visibility: "public" | "private" | null,
   num_players: number | null,
-  board_ids: [string] | null,
+  space_ids: [string] | null,
   card_type_ids [string] | null,
   token_type_ids [string] | null,
   data: {} | null
@@ -115,7 +115,7 @@ Obj<GameType>
   description: string | null,
   visibility: "public" | "private" | null,
   num_players: number | null,
-  board_ids: [string] | null,
+  space_ids: [string] | null,
   card_type_ids [string] | null,
   token_type_ids [string] | null,
   data: {} | null
