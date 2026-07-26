@@ -1,3 +1,14 @@
+# Structure
+
+GameType
+- CardTypes
+- TokenTypes
+- Spaces
+  - Piles
+  - Zones
+  - Hands
+    - [all] allowed {Card/Token}Types
+
 # Errors
 400 Bad Request
 404 Not Found
