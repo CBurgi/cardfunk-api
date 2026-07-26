@@ -1,3 +1,22 @@
+# Objects
+
+## GameType
+
+```
+{
+  id: string,
+  name: string,
+  description: string,
+  creator: string,
+  visibility: "public" | "private",
+  num_players: number,
+  board_ids: [string],
+  card_type_ids: [string],
+  token_type_ids: [string],
+  data: {}
+}
+```
+
 # POST createGameType
 
 ## URI
@@ -13,6 +32,12 @@
 ```
 {
   name: string | null,
+  description: string | null,
+  visibility: "public" | "private" | null,
+  num_players: number | null,
+  board_ids: [string] | null,
+  card_type_ids [string] | null,
+  token_type_ids [string] | null,
   data: {} | null
 }
 ```
@@ -25,14 +50,7 @@
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # GET getGameTypes
@@ -55,14 +73,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 **Body**
 ```
 [
-  {
-    id: string,
-    name: string,
-    board_ids: [string],
-    card_type_ids: [string],
-    token_type_ids: [string],
-    data: {}
-  }, ...
+  Obj<GameType>, ...
 ]
 ```
 
@@ -83,14 +94,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # PUT updateGameType
@@ -108,6 +112,9 @@ may want to do some pagination for this and/or just return name and id if too lo
 ```
 {
   name: string | null,
+  description: string | null,
+  visibility: "public" | "private" | null,
+  num_players: number | null,
   board_ids: [string] | null,
   card_type_ids [string] | null,
   token_type_ids [string] | null,
@@ -123,14 +130,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # PUT addItem
@@ -165,14 +165,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # PUT addItems
@@ -209,14 +202,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # PUT removeItem
@@ -245,14 +231,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # PUT removeItems
@@ -283,14 +262,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # PUT setValue
@@ -322,14 +294,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # PUT setValues
@@ -363,14 +328,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # PUT clearValue
@@ -399,14 +357,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # PUT clearValues
@@ -437,14 +388,7 @@ may want to do some pagination for this and/or just return name and id if too lo
 
 **Body**
 ```
-{
-  id: string,
-  name: string,
-  board_ids: [string],
-  card_type_ids: [string],
-  token_type_ids: [string],
-  data: {}
-}
+Obj<GameType>
 ```
 
 # DELETE deleteGameType
